@@ -1,0 +1,139 @@
+/* 
+    Document   : styles
+    Created on : Oct 14, 2013, 5:02:08 PM
+    Author     : camilo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+@font-face{
+    font-family: 'Neo Sans Intel';
+    src:url('../fonts/NeoSansIntel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+#container { 
+    text-align: center;
+    width: 960px;
+    margin: auto;
+    background-color: #ccc;
+}
+
+.gallery-list{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.gallery-album{
+    background-color: #0058a5;
+    height: 67px;
+    box-shadow: 0 10px 27px -8px;
+}
+.gallery-album-name{    
+    color: #FF0;
+    font-family: "Neo Sans Intel";
+    font-size: 34px;
+    position: relative;
+    top: 13px;
+    font-weight: normal;
+}
+.gallery-imgCont, .gallery-desc{
+    display: none;
+}
+.gallery-imgCont{
+    left: -51px;
+    position: relative;
+}
+.gallery-img{
+    display: block;
+}
+.gallery-desc{
+    color: #FF0;
+    font-family: "Neo Sans Intel";
+}
+
+.gallery-tmb{
+    float: left;
+    height: 60px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.4;
+}
+.gallery-tmb-active{
+    border: 1px solid #14a4dd;
+    height: 66px;
+    opacity: 1;
+}
+.gallery-tmbs{
+    height: 60px;    
+    position: relative;
+    top: 29px;    
+    width: 602px;
+    margin: auto;
+    box-shadow: 0 0 10px;
+}
+.gallery{
+    height: 732px;
+    position:relative;    
+}
+.gallery-imgs{
+    width: 493px;
+    position: absolute;
+    left: 231px;
+    border: 1px solid #fff;
+    z-index: 1;
+    top: 112px;
+    box-shadow: 0 0 15px -3px;
+    overflow: hidden;
+    text-align: center;
+}
+.gallery-tmbsCont{
+    background-image: url('../img/footer.jpg');
+    height: 119px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 476px;
+}
+.gallery-prevCont, .gallery-nextCont{
+    height: 41px;
+    width: 37px;
+    position: absolute;
+    border-bottom: 1px solid #fff;
+    top: 293px;
+    box-shadow: 0 0 30px #333;
+}
+.gallery-prevCont{
+    left: 194px;
+}
+.gallery-nextCont{
+    left: 726px;
+}
+.gallery-prev,
+.gallery-next
+{
+    background-image:url('../img/icons.png');
+    background-repeat:no-repeat;
+    top: 9px;
+    position: absolute;
+    left: 12px;    
+}
+.gallery-prev{background-position:0px 0px;width:11px;height:22px;}
+.gallery-prev:hover{background-position:-11px 0px;width:11px;height:22px;cursor: pointer;}
+.gallery-next{background-position:-22px 0px;width:11px;height:22px;}
+.gallery-next:hover{background-position:-33px 0px;width:11px;height:22px;cursor: pointer;}
+
+.gallery-descs{
+    position: relative;
+    top: 455px;
+}
+.gallery-title{
+    margin-bottom: 0px;
+}
+.gallery-bgImg{
+    background: url('../img/image2.jpg') no-repeat;
+    background-size: 960px 539px;
+    
+    height: 539px;
+    width: 960px;
+    position: absolute;
+    opacity: 0.4;
+}
