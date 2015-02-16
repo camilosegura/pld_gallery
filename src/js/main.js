@@ -23,7 +23,7 @@ window.onload = function(){
    
     rq.onreadystatechange = response;
     
-    rq.open('GET', 'server/gallery_json.js');
+    rq.open('GET', '../server/gallery_json.js');
     rq.setRequestHeader('Content-Type', 'application/json');   
     rq.addEventListener('error', error, false);    
     rq.send();    

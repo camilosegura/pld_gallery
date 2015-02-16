@@ -42,7 +42,7 @@ var gallery = {
             this.setDescription(photos[photo].title, photos[photo].location, photos[photo].date, descTitle);
             this.setThumbnails(photos[photo].thumb_url);
         }
-        ;
+        
         this.albumCont.appendChild(this.album);
         this.prevCont.appendChild(this.prev);
         this.nextCont.appendChild(this.next);
@@ -52,7 +52,7 @@ var gallery = {
         this.gal.appendChild(this.imgs);
         this.gal.appendChild(this.nextCont);
         this.gal.appendChild(this.descs);
-        this.tmbsCont.appendChild(this.tmbs),
+        this.tmbsCont.appendChild(this.tmbs);
         this.gal.appendChild(this.tmbsCont);
         this.tmbs.children[0].className = 'gallery-tmb gallery-tmb-active';
         this.imgs.children[0].style.display = 'block';
@@ -139,7 +139,7 @@ var gallery = {
     setPrevEvent: function() {
         this.prev.addEventListener('click', function(e) {
             var galleryActive = document.getElementsByClassName('gallery-tmb-active')[0];
-            if (galleryActive.previousSibling != null) {
+            if (galleryActive.previousSibling !== null) {
                 galleryActive.previousSibling.children[0].click();
             }
         });
@@ -147,9 +147,9 @@ var gallery = {
     setNextEvent: function() {
         this.next.addEventListener('click', function(e) {
             var galleryActive = document.getElementsByClassName('gallery-tmb-active')[0];
-            if (galleryActive.nextSibling != null) {
+            if (galleryActive.nextSibling !== null) {
                 galleryActive.nextSibling.children[0].click();
             }
         });
     }
-}
+};
