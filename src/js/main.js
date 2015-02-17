@@ -29,7 +29,3 @@ window.onload = function(){
     rq.send();    
     
 };
-
-
-
-
