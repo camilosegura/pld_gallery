@@ -28,17 +28,20 @@ src: url("../fonts/Nexa Light.otf") format("opentype");
     padding: 0px;
 }
 .gallery-album{
-    background-color: #0058a5;
-    height: 67px;
-    box-shadow: 0 10px 27px -8px;
+    background-color: #0162b3;
+    height: 69px;
+    box-shadow: 0 3px 5px #777;
+    z-index: 1;
+    position:relative;
 }
 .gallery-album-name{    
     color: #FF0;
     font-family: "Neo Sans Intel";
-    font-size: 34px;
+    font-size: 35px;
     position: relative;
     top: 13px;
     font-weight: normal;
+    word-spacing: -4px;
 }
 .gallery-imgCont, .gallery-desc{
     display: none;
@@ -81,21 +84,22 @@ src: url("../fonts/Nexa Light.otf") format("opentype");
 }
 .gallery-imgs{
     width: 493px;
-    position: absolute;
-    left: 231px;
+    position: relative;    
     border: 1px solid #fff;
     z-index: 1;
-    top: 112px;
-    box-shadow: 0 0 15px -3px;
+    top: 42px;
+    box-shadow: 0 0 33px 2px #666;
     overflow: hidden;
     text-align: center;
+    margin:auto;
 }
 .gallery-tmbsCont{
     background-image: url('../img/footer.jpg');
     height: 119px;
     background-repeat: no-repeat;
     position: relative;
-    top: 476px;
+    top: 73px;
+    box-shadow: inset 0 14px 50px -14px #333;
 }
 .gallery-prevCont, .gallery-nextCont{
 	cursor: pointer;
@@ -104,13 +108,13 @@ src: url("../fonts/Nexa Light.otf") format("opentype");
     position: absolute;
     border-bottom: 1px solid #fff;
     top: 293px;
-    box-shadow: 0 0 30px #333;
+    box-shadow: 0 0 40px 3px #000;
 }
 .gallery-prevCont{
-    left: 194px;
+    left: 202px;
 }
 .gallery-nextCont{
-    left: 726px;
+    left: 734px;
 }
 .gallery-prev,
 .gallery-next
@@ -128,16 +132,16 @@ src: url("../fonts/Nexa Light.otf") format("opentype");
 
 .gallery-descs{
     position: relative;
-    top: 455px;
+    top: 51px;
 }
 .gallery-title{
     margin-bottom: 0px;
 }
 .gallery-bgImg{
     background: url('../img/main-bg.jpg') no-repeat;
-    background-size: 974px 539px;
-    
-    height: 539px;
+    height: 544px;
     width: 100%;
     position: absolute;
+    top: 65px;
+    
 }

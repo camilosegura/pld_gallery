@@ -18,6 +18,10 @@ var autoprefix = require('gulp-autoprefixer');
 
 var minifyCSS = require('gulp-minify-css');
 
+var browserSync = require('browser-sync');
+
+var reload = browserSync.reload;
+
 gulp.task('jshint', function(){
 	gulp.src('./src/js/*.js')
 	    .pipe(jshint())
@@ -66,16 +70,22 @@ gulp.task('fonts', function() {
 	.pipe(gulp.dest('./build/fonts/'));
 });
 
-gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'styles', 'fonts'], function(){
+gulp.task('browser-sync', function(){
+	browserSync({
+		proxy: 'datos.local/pld_gallery/build/'
+	})
+});
+
+gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'styles', 'fonts', 'browser-sync'], function(){
 	gulp.watch('./src/*.html', function(){
-		gulp.run('htmlpage');
+		gulp.run('htmlpage', reload);
 	});
 	
 	gulp.watch('./src/js/*.js', function(){
-		gulp.run('jshint', 'scripts');
+		gulp.run('jshint', 'scripts', reload);
 	});
 	
 	gulp.watch('./src/css/*.css', function(){
-		gulp.run('styles');
+		gulp.run('styles', reload);
 	});
 });

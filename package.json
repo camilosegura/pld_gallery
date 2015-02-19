@@ -15,7 +15,9 @@
     "gulp-strip-debug": "^1.0.2",
     "gulp-minify-html": "^0.1.8"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.2.0"
+  },
   "scripts": {
     "test": "gulp"
   },
