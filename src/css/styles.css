@@ -11,9 +11,13 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+font-family: "Nexa Light";
+src: url("../fonts/Nexa Light.otf") format("opentype");
+}
 #container { 
     text-align: center;
-    width: 960px;
+    width: 974px;
     margin: auto;
     background-color: #ccc;
 }
@@ -94,6 +98,7 @@
     top: 476px;
 }
 .gallery-prevCont, .gallery-nextCont{
+	cursor: pointer;
     height: 41px;
     width: 37px;
     position: absolute;
@@ -117,9 +122,9 @@
     left: 12px;    
 }
 .gallery-prev{background-position:0px 0px;width:11px;height:22px;}
-.gallery-prev:hover{background-position:-11px 0px;width:11px;height:22px;cursor: pointer;}
+.gallery-prevCont:hover .gallery-prev{background-position:-11px 0px;width:11px;height:22px;}
 .gallery-next{background-position:-22px 0px;width:11px;height:22px;}
-.gallery-next:hover{background-position:-33px 0px;width:11px;height:22px;cursor: pointer;}
+.gallery-nextCont:hover .gallery-next{background-position:-33px 0px;width:11px;height:22px;}
 
 .gallery-descs{
     position: relative;
@@ -129,11 +134,10 @@
     margin-bottom: 0px;
 }
 .gallery-bgImg{
-    background: url('../img/image2.jpg') no-repeat;
-    background-size: 960px 539px;
+    background: url('../img/main-bg.jpg') no-repeat;
+    background-size: 974px 539px;
     
     height: 539px;
-    width: 960px;
+    width: 100%;
     position: absolute;
-    opacity: 0.4;
 }

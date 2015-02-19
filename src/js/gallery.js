@@ -137,7 +137,7 @@ var gallery = {
         }
     },
     setPrevEvent: function() {
-        this.prev.addEventListener('click', function(e) {
+        this.prevCont.addEventListener('click', function(e) {
             var galleryActive = document.getElementsByClassName('gallery-tmb-active')[0];
             if (galleryActive.previousSibling !== null) {
                 galleryActive.previousSibling.children[0].click();
@@ -145,7 +145,7 @@ var gallery = {
         });
     },
     setNextEvent: function() {
-        this.next.addEventListener('click', function(e) {
+        this.nextCont.addEventListener('click', function(e) {
             var galleryActive = document.getElementsByClassName('gallery-tmb-active')[0];
             if (galleryActive.nextSibling !== null) {
                 galleryActive.nextSibling.children[0].click();

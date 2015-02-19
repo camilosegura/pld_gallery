@@ -61,7 +61,12 @@ gulp.task('styles', function(){
 	    .pipe(gulp.dest('./build/css/'));
 });
 
-gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'styles'], function(){
+gulp.task('fonts', function() {
+	gulp.src('./src/fonts/*.{ttf,woff,eof,svg,otf}')
+	.pipe(gulp.dest('./build/fonts/'));
+});
+
+gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'styles', 'fonts'], function(){
 	gulp.watch('./src/*.html', function(){
 		gulp.run('htmlpage');
 	});
