@@ -72,7 +72,8 @@ gulp.task('fonts', function() {
 
 gulp.task('browser-sync', function(){
 	browserSync({
-		proxy: 'datos.local/pld_gallery/build/'
+		proxy: 'http://localhost/git/pld_gallery/build/'
+		
 	})
 });
 

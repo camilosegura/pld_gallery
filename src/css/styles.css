@@ -11,9 +11,41 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face{
+    font-family: 'Neo Sans Intel';
+    src:url('../fonts/NeoSansIntel-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face{
+    font-family: 'Neo Sans Intel Light';
+    src:url('../fonts/NeoSansIntel-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Neo Sans Intel Light';
+    src:url('../fonts/NeoSansIntel-LightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face{
+    font-family: 'Neo Sans Intel Medium';
+    src:url('../fonts/NeoSansIntel-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Neo Sans Intel Medium';
+    src:url('../fonts/NeoSansIntel-MediumItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
 @font-face {
-font-family: "Nexa Light";
-src: url("../fonts/Nexa Light.otf") format("opentype");
+    font-family: "Nexa Light";
+    src: url("../fonts/Nexa Light.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
 }
 #container { 
     text-align: center;
@@ -107,7 +139,7 @@ src: url("../fonts/Nexa Light.otf") format("opentype");
     width: 37px;
     position: absolute;
     border-bottom: 1px solid #fff;
-    top: 293px;
+    top: 294px;
     box-shadow: 0 0 40px 3px #000;
 }
 .gallery-prevCont{
@@ -121,14 +153,14 @@ src: url("../fonts/Nexa Light.otf") format("opentype");
 {
     background-image:url('../img/icons.png');
     background-repeat:no-repeat;
-    top: 9px;
-    position: absolute;
-    left: 12px;    
+    top: 10px;
+    position: relative;
+    margin: auto;
 }
-.gallery-prev{background-position:0px 0px;width:11px;height:22px;}
-.gallery-prevCont:hover .gallery-prev{background-position:-11px 0px;width:11px;height:22px;}
-.gallery-next{background-position:-22px 0px;width:11px;height:22px;}
-.gallery-nextCont:hover .gallery-next{background-position:-33px 0px;width:11px;height:22px;}
+.gallery-prev{background-position:-11px 0px;width:11px;height:22px;}
+.gallery-prevCont:hover .gallery-prev{background-position:0px 0px;width:11px;height:22px;}
+.gallery-next{background-position:-33px 0px;width:11px;height:22px;}
+.gallery-nextCont:hover .gallery-next{background-position:-22px 0px;width:11px;height:22px;}
 
 .gallery-descs{
     position: relative;
