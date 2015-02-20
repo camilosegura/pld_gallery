@@ -1,7 +1,7 @@
 /* 
     Document   : styles
-    Created on : Oct 14, 2013, 5:02:08 PM
-    Author     : camilo
+    Created on : Feb 19, 2015, 5:02:08 PM
+    Author     : camilo segura
     Description:
         Purpose of the stylesheet follows.
 */
@@ -75,14 +75,14 @@
     font-weight: normal;
     word-spacing: -4px;
 }
-.gallery-imgCont, .gallery-desc{
+.gallery-imgCont, .gallery-desc, .gallery-imgCont-nd{
     display: none;
 }
 .gallery-imgCont{
     left: -51px;
     position: relative;
 }
-.gallery-img{
+.gallery-img, .gallery-imgCont-d{
     display: block;
 }
 .gallery-desc{
@@ -96,6 +96,7 @@
     overflow: hidden;
     cursor: pointer;
     opacity: 0.4;
+    transition: height 0.3s;
 }
 .gallery-tmb-active{
     border: 1px solid #14a4dd;

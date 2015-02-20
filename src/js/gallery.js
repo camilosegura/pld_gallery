@@ -101,12 +101,13 @@ var gallery = {
     },
     activeSlide: function() {
         var that = this;
-        //this.tmbs.addEventListener('click', function(e) {
         var galleryTmbs = document.getElementsByClassName('gallery-tmb');
         for (var galleryTmb in galleryTmbs) {
             if (typeof galleryTmbs[galleryTmb] == 'object') {
                 console.log(galleryTmbs[galleryTmb]);
                 galleryTmbs[galleryTmb].addEventListener('click', function(e) {
+                	console.log(e);
+                	e.stopPropagation();
                     var listItems = that.tmbs.children;                    
                     var selected = 0;
                     console.log(e.srcElement);
@@ -138,18 +139,23 @@ var gallery = {
     },
     setPrevEvent: function() {
         this.prevCont.addEventListener('click', function(e) {
+        	e.stopPropagation();
             var galleryActive = document.getElementsByClassName('gallery-tmb-active')[0];
+            console.log(this);
+            console.log(galleryActive);
             if (galleryActive.previousSibling !== null) {
                 galleryActive.previousSibling.children[0].click();
-            }
+                console.log(galleryActive.previousSibling.children[0] + "_");
+            }            
         });
     },
     setNextEvent: function() {
         this.nextCont.addEventListener('click', function(e) {
+        	e.stopPropagation();
             var galleryActive = document.getElementsByClassName('gallery-tmb-active')[0];
             if (galleryActive.nextSibling !== null) {
                 galleryActive.nextSibling.children[0].click();
-            }
+            }            
         });
     }
 };
